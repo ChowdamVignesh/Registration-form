@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Course Registerstion Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>personal-details</legend>
+        <table>
+          <tr>
+            <td><label for="name">Name</label></td>
+            <td>
+              <input type="text" required id="name" pattern="[a-zA-Z]{3,8}" placeholder="ex:vignesh"/>
+              <p>Enter your name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="surname">Surname</label></td>
+            <td>
+              <input type="text" required id="surname" name="surname" id="" placeholder="familyName" />
+               <p>Enter your surname</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobile number">Mobile Number</label></td>
+            <td><input type="text" required id="mobile" placeholder="235466897"/><p>Enter your mobile number</p></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="" id="email" placeholder="vignesh@gmail.com" /><p>Enter your vaild email</p>
+            <img class="valid" src="checked.png" width="20px" height="20px" alt="">
+            <img class="invalid" src="multiplication.png" width="20px" height="20px" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" name="" id="" placeholder="Vignesh@2222" pattern="[A-Z]{1}[A-Za-z]{2,15}[@#$%&!]{1}[0-9]{1,6}"/><p>Enter your vaild password</p>
+            <img class="valid" src="checked.png" width="20px" height="20px" alt="">
+            <img class="invalid" src="multiplication.png" width="20px" height="20px" alt="">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Conform password">Confrom Password</label></td>
+            <td><input type="password" name="" id="" pattern="[A-Z]{1}[A-Za-z]{2,15}[@#$%&!]{1}[0-9]{1,6}"/><p>Enter your conform password</p></td>
+          </tr>
+          <tr>
+            <td><label for="DOB">DOB</label></td>
+            <td><input type="date" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input type="number" name="age" required min="18" required max="100">
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Gender">Gender</label></td>
+            <td>
+              <input type="Radio" required id="male" name="gender" id="" />
+              <label for="male">Male</label>
+              <input type="Radio" required id="Female" name="gender" id="" />
+              <label for="Female">FeMale</label>
+              <input type="Radio" required id="other" name="gender" id="" />
+              <label for="other">other</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Select Country">Select Country</label></td>
+            <td><input list="country" /></td>
+            <td>
+              <datalist id="country">
+                <option value="India">India</option>
+                <option value="Us">Us</option>
+                <option value="Uk">Uk</option>
+                <option value="Japan">Japan</option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Upload file">Upload file</label></td>
+            <td><input type="file" /></td>
+          </tr>
+          <tr>
+            <td><input type="submit" name="" id="" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend>course details</legend>
+        <table>
+          <tr>
+            <td><label for="course">Select Course</label></td>
+            <td><input list="course" /></td>
+            <td>
+              <datalist id="course">
+                <option value="Java full stack">JFS</option>
+                <option value="Python full stack">PFS</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Delivery mode">Delivery Mode</label></td>
+            <td>
+              <input type="checkbox" name="Online" id="" />
+              <label for="Online">Online</label>
+              <input type="checkbox" name="Offline" /><label for="Offline"
+                >Offline</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Institute Name</label></td>
+            <td><input type="text" class="my" value="My Academy" readonly></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td><label for="comments">Comments</label></td>
+            <td><textarea name="" id="" cols="15" rows="5"></textarea></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="reset" name="" id="" />
+    </form>
+  </body>
+</html>

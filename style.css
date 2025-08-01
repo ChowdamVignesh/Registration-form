@@ -1,0 +1,88 @@
+body{
+    background: #7a2eb8;
+background: linear-gradient(330deg, rgba(122, 46, 184, 1) 5%, rgba(253, 29, 29, 1) 52%, rgba(252, 176, 69, 1) 100%);
+}
+input+p{
+    display: none;
+}
+input:hover+p{
+    display: inline;
+    font-weight: 200;
+    font-size: 10px;
+    
+    font-family:fantasy;
+    color: rgb(7, 54, 56);
+}
+input[type]{
+    border-radius: 20px;
+}
+form{
+    width: 500px;
+}
+fieldset{
+    border: 3px solid black;
+    border-radius: 5px;
+}
+input:focus{
+    background-color:violet ;
+}
+input:hover{
+
+    background: #51a669;
+background: linear-gradient(0deg, rgba(81, 166, 105, 1) 0%, rgba(29, 230, 245, 1) 35%, rgba(150, 115, 255, 1) 75%, rgba(224, 61, 205, 0.91) 100%);
+}
+h1{
+    background: #51a669;
+background: linear-gradient(0deg, rgba(81, 166, 105, 1) 0%, rgba(29, 230, 245, 1) 35%, rgba(61, 91, 224, 1) 100%);
+ background-clip: text;
+ color: transparent;
+}
+img{
+    display: none;
+}
+input[type="email"]:focus:valid~img.valid{
+       display: inline;
+       width: "20px";
+       height: "20px";
+}
+input[type="email"]:focus:invalid~img.invalid{
+       display: inline;
+       width: "20px";
+       height: "20px";
+}
+input[type="Radio"]:checked{
+    width:20px;
+    height:20px;
+}
+input[type="Radio"]:checked + label{
+    font-size:20px;
+   color: aquamarine;
+}
+textarea{
+    width: 200px;
+    height: 100px;
+    resize: none;
+}
+
+input[type="password"]:focus:valid~img.valid{
+   display: inline;
+       width: "20px";
+       height: "20px";
+}
+input[type="password"]:focus:invalid~img.invalid{
+   display: inline;
+       width: "20px";
+       height: "20px";
+}
+input:read-only.my{
+    background-color:burlywood;
+    font-family: cursive;
+}
+input[list="country"]{
+    background-color: antiquewhite;
+    color: black solid;
+    border-radius: 20px;
+}
+legend{
+    font-family:cursive ;
+}
